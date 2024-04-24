@@ -4,12 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Personal Blog</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
 </head>
 
 <body>
-  
+  <div id='root'>
+    <form id='form'>
+      <h1>What do you feel like saying?</h1>
+      <section class='part'>
+        <h2>Username</h2>
+        <textarea id='username' placeholder='Who&#146s the one blogging?'></textarea>
+      </section>
+      <section class='part'>
+        <h2>Title</h2>
+        <textarea id='title' placeholder='A descriptive title'></textarea>
+      </section>
+      <section class='part'>
+        <h2>Content</h2>
+        <textarea id='content' placeholder='What would you like to say?'></textarea>
+      </section>
+      <div>
+        <button id="submit">Submit</button>
+      </div>  
+    </form>
+  </div>
+  <script type="text/javascript" src="./assets/js/form.js"></script>
 </body>
   
 </html>

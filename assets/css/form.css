@@ -1,0 +1,16 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(81, 81, 255), rgb(66, 217, 255), rgb(71, 197, 71));
+}
+
+#root {
+    background-color: white;
+    margin: 10%;
+    margin-bottom: 20%;
+    padding: 10px;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
