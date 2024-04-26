@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom right, rgb(81, 81, 255), rgb(66, 217, 255), rgb(71, 197, 71));
+    background-color: rgb(0, 160, 72);
 }
 
 #root {
@@ -7,7 +7,7 @@ body {
     margin: 10%;
     margin-bottom: 20%;
     padding: 20px;
-    border: solid 5px rgb(72, 124, 135);
+    border: solid 5px rgb(0, 255, 145);
     border-radius: 10px;
 }
 
