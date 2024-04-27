@@ -19,9 +19,16 @@ In the starting page, the user will need to provide text for three input section
 
 Both pages have a header and a footer. The header contains a button to toggle light/dark mode. Clicking on this will change the current page to a light or dark theme. The footer contains the developer of the webpages (i.e., me) as well as a link to my website portfolio. The header for the second page, however, has two extra buttons: Back, and Clear All. The Back button takes the user back to the first page where they can write another blog post. The Clear All button will clear the current stored list of blog posts. 
 
+First Page: Light 
 ![First page, screenshot of light theme](assets/images/form.light.png)
+
+Second Page: Light 
 ![Second page, screenshot of light theme](assets/images/blog.light.png)
+
+First Page: Dark 
 ![First page, screenshot of dark theme](assets/images/form.dark.png)
+
+Second Page: Dark 
 ![Second page, screenshot of dark theme](assets/images/blog.dark.png)
 
 ## Credits
