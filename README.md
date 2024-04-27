@@ -17,7 +17,7 @@ https://geovko.github.io/personal-blog/
 
 In the starting page, the user will need to provide text for three input sections: Username, Blog Title, and Blog Content. Pressing the 'Submit' will direct the user to the second page. However, if any of the input sections is left blank, the user will not be directed and will instead be prompted to fill the missing section(s). In the second page, the user can view all of the blog posts that have been stored into the current browser. 
 
-Both pages have a header and a footer. The header contains a button to toggle light/dark mode. Clicking on this will change the current page to a light or dark theme. The footer contains the developer of the webpages (i.e., me) as well as a link to my website portfolio. The header for the second page, however, has two extra buttons: Back, and Clear All. The Back button takes the user back to the first page where they can write another blog post. The Clear All button will clear the current stored list of blog posts. 
+Both pages have a header and a footer. The header contains a button (🔦ON/OFF) to toggle light/dark mode. Clicking on this will change the current page to a light or dark theme. The footer contains the developer of the webpages (i.e., me) as well as a link to my website portfolio. The header for the second page, however, has two extra buttons: Back, and Clear All. The Back button takes the user back to the first page where they can write another blog post. The Clear All button will clear the current stored list of blog posts. 
 
 First Page: Light 
 ![First page, screenshot of light theme](assets/images/form.light.png)
