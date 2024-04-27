@@ -1,5 +1,4 @@
-# personal-blog
-Personal Blog
+# Personal Blog
 
 ## Description
 
