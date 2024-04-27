@@ -1,4 +1,4 @@
-const rootEl = document.getElementById('root');
+const rootEl = document.getElementById('main');
 const clearAll = document.querySelector('#clearAll');
 let storedBlogs = JSON.parse(localStorage.getItem('blogs'));
 
@@ -12,9 +12,14 @@ clearAll.addEventListener('click', function () {
 });
 
 function displayBlogs() {
-    if (storedBlogs != null) {
+    if (storedBlogs.length == 0) {
+        const note = document.createElement('p');
+        note.textContent = "There are currently no blog posts to view.";
+        rootEl.append(note);
+    } else if (storedBlogs != null) {             
         for (i = 0; i < storedBlogs.length; i++) {
             const singleBlog = document.createElement('div');
+            singleBlog.classList.add('box');
             rootEl.append(singleBlog);
 
             const titleEl = document.createElement('h2');

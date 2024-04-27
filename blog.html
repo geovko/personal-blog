@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Blog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/blog.css">
 </head>
 
-<body>
-    <header>
-        <h1>My Personal Blog Posts!</h1>
-        <a href="./index.html">
-            <h4>Back</h4>
-        </a>
-        <a id="clearAll">
-            <h4>Clear All</h4>
-        </a>
+<body class="light-green">
+    <header id="header" class="light">    
+        <a href="./index.html">Back</a>
+        <a id="clearAll">Clear All</a>
+        <a id="toggle">🔦ON/OFF</a>
     </header>
+    <h1 class="permanent-marker-regular">My Personal Blog Posts!</h1>
+    <div id='main' class="light"></div>
 
-    <div id='root'></div>
-
-    <footer>
+    <footer id="footer" class="light">
         <p>Developed by: Philip</p>
         <a href="https://geovko.github.io/website-portfolio/">My Portfolio</a>
     </footer>
