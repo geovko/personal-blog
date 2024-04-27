@@ -1,18 +1,22 @@
-body {
-    background-color: rgb(0, 160, 72);
+h1 {
+    font-size: 30px;
 }
 
-#root {
-    background-color: white;
-    margin: 10%;
-    margin-bottom: 20%;
-    padding: 20px;
-    border: solid 5px rgb(0, 255, 145);
-    border-radius: 10px;
+h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
 }
 
-#form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+#main {
+    text-align: center;
+}
+
+.inputBox {
+    height: 25px;
+    width: 92%;
+}
+
+#submit {
+    margin: 20px 0 10px 0;
 }

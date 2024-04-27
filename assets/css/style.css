@@ -1,0 +1,85 @@
+:root {
+    --dark: #000000;
+    --light: #ffffff;
+    --night-green: rgb(0, 31, 10);
+    --main-green: rgb(10, 128, 69);
+    --day-green: rgb(5, 152, 69);
+}
+
+body {
+    height: 100%;
+    background-color: var(--night-green);    
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+}
+
+#header {
+    border-bottom: solid 5px var(--main-green);
+    padding: 10px 10px;
+    text-align: right;
+}
+
+#main {
+    border: ridge 12px rgb(0, 255, 145);
+    border-radius: 10px;
+    margin: 20px 5% 150px 5%;
+    padding: 5px;
+    min-width: 310px;
+}
+
+#footer {
+    border-top: solid 5px var(--main-green);
+    text-align: center;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    background-color: var(--main-green);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* dark mode */
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.dark-green {
+    background-color: var(--night-green);
+}
+
+/* light mode */
+.light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.light-green {
+    background-color: var(--day-green);
+}
+
+/* special fonts */
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  

@@ -4,41 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Personal Blog</title>
+
+  <!-- fonts provided by Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Permanent+Marker&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
 </head>
 
-<body>
-  <header>
-    <a id="darkLight">
-        <h4>darkLight</h4>
-    </a>
+<body class="light-green">
+  <header id="header" class="light">
+    <a id="toggle">🔦ON/OFF</a>
   </header>
   
-  <div id='root'>
-    <form id='form'>
-      <h1>Got something to say? Make a blog.</h1>
-      <section>
-        <label for="username"><h2>Username</h2></label>
-        <input type="text" id='username' name ="username" placeholder='Who&#146s the one blogging?'></input>
-      </section>
-      <section>
-        <label for="title"><h2>Blog Title</h2></label>
-        <input type="text" id='title' name ="title" placeholder='A descriptive title perhaps?'></input>
-      </section>
-      <section>
-        <label for="content"><h2>Blog Content</h2></label>
-        <input type="text" id='content' name ="content" placeholder='Let it all out!'></input>
-      </section>
-      <div id="submit">
-        <a href="./blog.html">
-          <h4>Submit</h4>
-        </a>
-      </div>
-    </form>
-  </div>
+  <form id="main" class="light">
+    <h1 class="permanent-marker-regular">Got something to say? Make a blog.</h1>
+ 
+    <label class="didact-gothic-regular" for="username"><h2>Username</h2></label>
+    <input class="inputBox" type="text" id='username' name ="username" placeholder=' Who&#146s the one blogging? '></input>
+    <br><br>
+    <label class="didact-gothic-regular" for="title"><h2>Blog Title</h2></label>
+    <input class="inputBox" type="text" id='title' name ="title" placeholder=' A descriptive title perhaps? '></input>
+    <br><br>
+    <label class="didact-gothic-regular" for="content"><h2>Blog Content</h2></label>
+    <input class="inputBox" type="text" id='content' name ="content" placeholder=' Let it all out! '></input>
 
-  <footer>
+    <div id="submit">
+      <a href="./blog.html">Submit</a>
+    </div>
+  </form>
+
+
+  <footer id="footer" class="light">
     <p>Developed by: Philip</p>
     <a href="https://geovko.github.io/website-portfolio/">My Portfolio</a>
   </footer>
