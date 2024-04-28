@@ -6,6 +6,7 @@ const toggle = document.querySelector('#toggle')
 
 let darkMode = true;
 
+// Toggles between dark and light modes
 toggle.addEventListener('click', function () {
    if (darkMode) {
         headerEl.classList.replace('light','dark');
