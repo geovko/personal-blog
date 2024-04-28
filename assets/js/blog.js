@@ -1,6 +1,33 @@
 const rootEl = document.getElementById('main');
+const clearOne = document.querySelector('#clearOne');
 const clearAll = document.querySelector('#clearAll');
 let storedBlogs = JSON.parse(localStorage.getItem('blogs'));
+
+// Clears a single blog Post
+clearOne.addEventListener('click', function () {
+    let blogIndex = -1;
+    let isDone = false;
+
+    while (!isDone) {
+        blogIndex = (prompt('Please, enter the number of the blog post you wish to remove.') - 1);    
+        
+        if (blogIndex == null || blogIndex == -1) {
+            isDone = true;
+            return;
+        }
+
+        if (Number.isNaN(blogIndex)) {
+            if (!confirm('That was not a valid number. Do you wish to continue?')) {
+                isDone = true;
+            }
+        } else {
+            storedBlogs.splice((blogIndex), 1);
+            localStorage.setItem('blogs', JSON.stringify(storedBlogs));
+            location.reload();
+            isDone = true;
+        }
+    }
+});
 
 // Clears all blogs stored in local storage and refreshes the page
 clearAll.addEventListener('click', function () {
@@ -11,6 +38,7 @@ clearAll.addEventListener('click', function () {
     }
 });
 
+// Dynamically creates the stored blog posts
 function displayBlogs() {
     if (storedBlogs.length == 0) {
         const note = document.createElement('p');
@@ -23,7 +51,7 @@ function displayBlogs() {
             rootEl.append(singleBlog);
 
             const titleEl = document.createElement('h2');
-            titleEl.textContent = storedBlogs[i].title;
+            titleEl.textContent = `#${i + 1}: ${storedBlogs[i].title}`;
             singleBlog.append(titleEl);
 
             const contentEl = document.createElement('p');
